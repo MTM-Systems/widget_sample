@@ -1,0 +1,79 @@
+.tab_win {
+	font-family : "YuGothic", "Meiryo", sans-serif;
+	background-color: #ffffff;
+	border:ridge;
+	border-radius:7px;
+	display:inline-block;
+	width:auto;
+	position:absolute;
+}
+
+.win_header {
+	background-color:hsl(200,100%,90%);
+	padding:0 1em 0 1em;
+	display:flex;
+}
+
+div.icon + div.alt {
+	display: none;
+	top: -2em;
+	right : 1em;
+	left: auto;
+}
+
+div.icon:hover {
+	background-color: #ffffff;
+}
+
+div.icon:hover + div.alt {
+	display: inline;
+	background-color: #000000;
+	padding:3px;
+	color:#ffffff;
+	z-index : 20;
+}
+
+
+.tab {
+	padding-right : 0.5em;
+	padding-left : 0.5em;
+}
+
+.tab > div {
+	border-radius: 5px 5px 0 0;
+	border: solid;
+	border-width : thin;
+	padding : 0.5em;
+	flex: 1 1 auto;
+}
+
+.tab > div:not(.selected):hover {
+	cursor: pointer;
+	border-right : ridge;
+	border-left : ridge;
+	border-bottom : ridge;
+	background-color : #f0f0f0;
+}
+
+.tab > div.selected {
+	border-bottom : none;
+	background-color : #ffffff;
+}
+
+.tab > div.selected:hover {
+	background-color : #ffffff;
+	color : #000000;
+	cursor: text;
+}
+
+.win_body {
+	border-right : solid;
+	border-left : solid;
+	border-bottom : solid;
+	border-width : thin;
+	padding: 1em 1em 1em 1em;
+	margin-right : 0.5em;
+	margin-left : 0.5em;
+	margin-bottom : 0.5em;
+	border-radius: 0px 0px 5px 5px;
+}
